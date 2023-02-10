@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="index.php" method="GET">
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" placeholder="081298201824" required>
+        </div>
+        <br>
+        <div>
+            <label for="bdate">Birthdate: </label>
+            <input type="date" name="bdate" id="bdate">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Quantity: </label>
+            <input type="number" name="quantity" id="quantity" min="0" max="99" value="1">
+        </div>
+        <br>
+        <div>
+            <label for="title">Title: &nbsp</label>
+
+            <label for="men">Men</label>
+            <input type="radio" name="title" id="men" value="men">
+            <label for="women">Women</label>
+            <input type="radio" name="title" id="women" value="women">
+        </div>
+        <br>
+        <div>
+            <label for="payment">Payment: </label>
+            <select name="payment" id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="bca">BCA</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subs">Subscribe</label>
+            <input type="checkbox" name="subs" id="subs">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>HTML Button</title>
+</head>
+
+<body>
+    <!-- Button -->
+    <a href="index.html">
+        <button style="background-color: lightblue; color: red; border-radius: 5px;">Index</button>
+    </a>
+    <hr>
+
+    <!-- Button Disabled -->
+    <a href="index.html">
+        <button disabled style="background-color: lightblue; color: red; border-radius: 5px;">Disabled</button>
+    </a>
+    <hr>
+
+    <!-- Button JavaScript Basic -->
+    <button onclick="doSomething()"
+        style="background-color: lightblue; color: red; border-radius: 5px;">JavaScript</button>
+    <p id="test">HAYY</p>
+
+    <script>
+        function doSomething() {
+            document.getElementById("test").innerHTML = "BYE";
+        }
+    </script>
+</body>
+
+</html>
